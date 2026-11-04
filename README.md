@@ -46,6 +46,15 @@ docker run --rm -p 127.0.0.1:8000:8000 -v actionos-data:/data --env-file .env -e
 
 The image tag is a deployment name; until migration is implemented it still contains the inherited application. Container acceptance remains unverified. The image is designed for one static/API origin and UID 10001; bind mounts must be writable by that user. The data-path override prevents local `.env` settings from bypassing the volume.
 
+## Architecture
+![ActionOS Architecture](architecture.png)
+
+## ActionOS agentic workflow
+![Agentic workflow](flow.png)
+
+## ActionOS demo
+[![Watch Demo]](https://youtu.be/axjYUg0_eSM)
+
 ## Verification
 
 ```powershell

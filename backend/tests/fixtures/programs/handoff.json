@@ -1,0 +1,16 @@
+{
+  "schema_version":"1.0",
+  "instruction":"Find the second transfer of the parcel from the giver to the receiver, excluding cycles with an obscured parcel.",
+  "entities":[{"id":"giver","description":"the giver","role":"actor"},{"id":"receiver","description":"the receiver","role":"actor"},{"id":"parcel","description":"the parcel","role":"object"}],
+  "steps":[
+    {"id":"giver_holds","predicate":"holds","entities":["giver","parcel"]},
+    {"id":"release","predicate":"releases","entities":["giver","parcel"]},
+    {"id":"receiver_holds","predicate":"holds","entities":["receiver","parcel"]},
+    {"id":"parcel_visible","predicate":"visible","entities":["parcel"]}
+  ],
+  "relations":[{"id":"hold_release","op":"then","from":"giver_holds","to":"release"},{"id":"release_receive","op":"then","from":"release","to":"receiver_holds"}],
+  "cycle":{"root_step_id":"giver_holds"},
+  "selection":{"occurrences":"second"},
+  "exclusions":[{"id":"exclude_obscured","source_wording":"excluding cycles with an obscured parcel","expression":{"op":"not","args":[{"op":"ref","reference":{"kind":"step","id":"parcel_visible"}}]}}],
+  "actions":[{"id":"report","type":"create_report"}]
+}

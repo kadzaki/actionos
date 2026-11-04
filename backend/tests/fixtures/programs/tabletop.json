@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "instruction": "Find each cycle where the operator places a component, then uses the tool. Flag any cycle where the tool step cannot be seen.",
+  "entities": [
+    {"id":"operator","description":"the operator","role":"actor"},
+    {"id":"component","description":"the component","role":"object"},
+    {"id":"tool","description":"the handheld tool","role":"instrument"}
+  ],
+  "steps": [
+    {"id":"place","predicate":"semantic_event","phrase":"the operator places the component","entities":["operator","component"]},
+    {"id":"use","predicate":"semantic_event","phrase":"the operator uses the tool on the component","entities":["operator","tool","component"]}
+  ],
+  "relations":[{"id":"place_then_use","op":"then","from":"place","to":"use"}],
+  "cycle":{"root_step_id":"place"},
+  "selection":{"occurrences":"all"},
+  "unknown_policy":{"observation":"require_observed","presentation":"needs_review","negative_coverage":"complete_predicate_window"},
+  "actions":[{"id":"clips","type":"extract_clip","when":"both"},{"id":"report","type":"create_report","when":"both"}],
+  "assumptions":[{"code":"DEFAULT_TIMING","message":"Cycle and step gap are bounded at 12 seconds; review this engineering default.","material":false}]
+}

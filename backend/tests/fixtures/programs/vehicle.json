@@ -1,0 +1,8 @@
+{
+  "schema_version":"1.0",
+  "instruction":"Find when the red car overtakes the blue car; preserve both cars in the extracted clip.",
+  "entities":[{"id":"red_car","description":"the red car","role":"object","attributes":["red"]},{"id":"blue_car","description":"the blue car","role":"object","attributes":["blue"]}],
+  "steps":[{"id":"overtake","predicate":"semantic_event","phrase":"the red car overtakes the blue car","entities":["red_car","blue_car"]}],
+  "cycle":{"root_step_id":"overtake"},
+  "actions":[{"id":"clip","type":"extract_clip","parameters":{"framing":"track_relevant_entities","entity_ids":["red_car","blue_car"]}}]
+}

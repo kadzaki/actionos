@@ -1,0 +1,21 @@
+{
+  "schema_version": "actionos-evaluation-manifest-1",
+  "status": "acquisition_and_independent_annotation_pending",
+  "cases": [
+    {"id":"E01","domain":"assembly","path":"demo-video.mp4","source_sha256":"617e732c182eb2451a0d3809ff65e68194bf7d228d93b4aa1ba2f5416e306d32","permission":"User reports royalty-free Pexels source; exact stock page not supplied","scenario":"engagement, turning, withdrawal; partial clip-boundary engagement","labels":null},
+    {"id":"E02","domain":"assembly","path":null,"scenario":"separate upper/lower screw-position revision control","labels":null},
+    {"id":"E03","domain":"handoff","path":null,"scenario":"repeats, actor/object identity ambiguity","labels":null},
+    {"id":"E04","domain":"traffic","path":null,"scenario":"passing with camera movement","labels":null},
+    {"id":"E05","domain":"cooking","path":null,"scenario":"unseen action type; ordered steps","labels":null},
+    {"id":"E06","domain":"cooking","path":null,"scenario":"absent target and separate insufficient-coverage interval","labels":null}
+  ],
+  "labels_contract": {
+    "schema_version":"actionos-human-labels-1",
+    "source_sha256":"required original source hash",
+    "independent_human_labels":true,
+    "annotator":"required independent human identity",
+    "frozen_at":"required UTC timestamp before inference",
+    "temporal_iou_threshold":"freeze numeric threshold in (0,1] before inference",
+    "events":"array of {interval:{start_ms,end_ms}, verdict:true|false|unknown, steps:[{step_id,verdict}]}"
+  }
+}

@@ -1,0 +1,9 @@
+export type TrackSample = { input_frame_index: number; source_frame_index: number; source_time_ms: number; source_pts: number; source_time_base: string; x: number; y: number; width: number; height: number }
+export type TrackSegment = { id: string; input_frames: { start_frame: number; stop_frame: number }; source_interval: { start_ms: number; end_ms: number } }
+export type TrackCandidate = { id: string; provider_object_id: number; identity: 'unknown'; samples: TrackSample[]; segments: TrackSegment[]; missing_input_ranges: { start_frame: number; stop_frame: number }[]; lost_at_window_end: boolean; uncertainty: string[] }
+export type BatchSummary = { batch_id: string; run_id: string; entity_id: string; role: string; status: 'candidates' | 'not_observed' | 'unavailable'; candidate_count: number; evidence_scope: string }
+export type TrackBatch = { run_id: string; program_fingerprint: string; source_asset_id: string; source_sha256: string; entity_id: string; role: string; input_frame_count: number; status: BatchSummary['status']; candidates: TrackCandidate[]; uncertainty: string[]; error_code: string | null; negative_coverage_verified: false }
+export type BatchInfo = { batch_id: string; batch_fingerprint: string; evidence_scope: string; batch: TrackBatch }
+export type FrameInfo = { input_frame_index: number; image_url: string; source_url: string; frame: { evidence_frame_id: string; source_frame_index: number; source_pts: number; source_time_base: string; source_time_ms: number } }
+export type BindingInfo = { binding_id: string; created_at: string; binding: { candidate_id: string; segment_id: string; evidence_frame_id: string; input_frame_index: number; scope: 'selected_segment_only'; cross_window_identity_verified: false } }
+export type EvidenceList<T> = { items: T[]; errors: { record_id: string; code: string; message: string }[]; next_offset: number | null }

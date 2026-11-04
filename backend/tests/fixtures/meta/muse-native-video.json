@@ -1,0 +1,31 @@
+{
+  "model": "muse-spark-1.3",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 353,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 705,
+    "output_tokens_details": {
+      "reasoning_tokens": 661
+    },
+    "total_tokens": 1058
+  },
+  "output": [
+    {
+      "type": "message",
+      "id": "msg_2ca8df48-3c70-46f2-8637-982edfe909c6",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\"description\": \"A solid red rectangular block moves horizontally across a black background from a left position to a right position across consecutive frames.\", \"direction\": \"left_to_right\"}",
+          "annotations": [],
+          "logprobs": []
+        }
+      ],
+      "status": "completed"
+    }
+  ]
+}

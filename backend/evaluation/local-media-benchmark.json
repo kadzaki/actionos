@@ -1,0 +1,125 @@
+{
+  "scope": "generated media; local ingest and coarse sampling only; no recognition or cloud latency claim",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.2",
+  "logical_cpus": 12,
+  "ffmpeg": "ffmpeg version 2024-07-24-git-896c22ef00-full_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+  "cases": [
+    {
+      "source_seconds": 10,
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "source_bytes": 2996583,
+      "ingest_seconds": 4.625,
+      "sample_seconds": 0.656,
+      "window_count": 1,
+      "window_frames": 300,
+      "project_bytes": 7842988,
+      "stage_durations": [
+        {
+          "stage": "queued",
+          "seconds": 0.185
+        },
+        {
+          "stage": "probing",
+          "seconds": 0.134
+        },
+        {
+          "stage": "mapping_timestamps",
+          "seconds": 0.598
+        },
+        {
+          "stage": "normalizing",
+          "seconds": 1.477
+        },
+        {
+          "stage": "creating_preview",
+          "seconds": 0.877
+        },
+        {
+          "stage": "verifying",
+          "seconds": 1.136
+        }
+      ]
+    },
+    {
+      "source_seconds": 30,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "source_bytes": 17806374,
+      "ingest_seconds": 20.5,
+      "sample_seconds": 2.047,
+      "window_count": 3,
+      "window_frames": 1020,
+      "project_bytes": 45449059,
+      "stage_durations": [
+        {
+          "stage": "queued",
+          "seconds": 0.155
+        },
+        {
+          "stage": "probing",
+          "seconds": 0.135
+        },
+        {
+          "stage": "mapping_timestamps",
+          "seconds": 3.247
+        },
+        {
+          "stage": "normalizing",
+          "seconds": 9.617
+        },
+        {
+          "stage": "creating_preview",
+          "seconds": 1.978
+        },
+        {
+          "stage": "verifying",
+          "seconds": 4.938
+        }
+      ]
+    },
+    {
+      "source_seconds": 120,
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "source_bytes": 35826900,
+      "ingest_seconds": 39.157,
+      "sample_seconds": 11.593,
+      "window_count": 12,
+      "window_frames": 4260,
+      "project_bytes": 94595832,
+      "stage_durations": [
+        {
+          "stage": "queued",
+          "seconds": 0.169
+        },
+        {
+          "stage": "probing",
+          "seconds": 0.181
+        },
+        {
+          "stage": "mapping_timestamps",
+          "seconds": 6.188
+        },
+        {
+          "stage": "normalizing",
+          "seconds": 17.773
+        },
+        {
+          "stage": "creating_preview",
+          "seconds": 4.261
+        },
+        {
+          "stage": "verifying",
+          "seconds": 10.006
+        }
+      ]
+    }
+  ],
+  "peak_memory": "not measured",
+  "recorded_date": "2026-11-01"
+}

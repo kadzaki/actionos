@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "state": "source_page_licenses_recorded_pending_media_and_annotations",
+  "frozen_before_real_world_inference": "2026-11-01",
+  "thresholds": {
+    "positive_temporal_pass_fraction": 0.6666666666666666,
+    "event_temporal_iou": 0.5,
+    "key_moment_error_ms": 750,
+    "crop_primary_visible_fraction": 0.9,
+    "maximum_frame_edge_error_px": 2,
+    "export_duration_tolerance_ms": 100,
+    "required_occurrence_accuracy": 1.0,
+    "required_negative_false_matches": 0,
+    "required_source_scan_fraction": 1.0
+  },
+  "videos": [
+    {
+      "id": "sports-skate",
+      "title": "Louis Sarowsky performing at Gowanus E-Waste recycling center.webm",
+      "domain": "sports",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Louis_Sarowsky_performing_at_Gowanus_E-Waste_recycling_center.webm",
+      "license_verification": "license_recorded_from_public_file_page",
+      "source_sha256": null,
+      "prepared_sha256": null,
+      "annotations_state": "pending_independent_visual_inspection",
+      "author": "Wil540 / Wil540 art",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Louis_Sarowsky_performing_at_Gowanus_E-Waste_recycling_center.webm",
+      "license_checked_at": "2026-11-01",
+      "attribution": "Louis Sarowsky performing at Gowanus E-Waste recycling center.webm by Wil540 / Wil540 art, CC BY-SA 4.0 (via Wikimedia Commons). Source: https://commons.wikimedia.org/wiki/File:Louis_Sarowsky_performing_at_Gowanus_E-Waste_recycling_center.webm. Changes: converted to MP4 for local evaluation."
+    },
+    {
+      "id": "sports-dribble",
+      "title": "Basketball-Basic Types of Dribbling.webm",
+      "domain": "sports",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Basketball-Basic_Types_of_Dribbling.webm",
+      "license_verification": "license_recorded_from_public_file_page",
+      "source_sha256": null,
+      "prepared_sha256": null,
+      "annotations_state": "pending_independent_visual_inspection",
+      "author": "Mart570",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Basketball-Basic_Types_of_Dribbling.webm",
+      "license_checked_at": "2026-11-01",
+      "attribution": "Basketball-Basic Types of Dribbling.webm by Mart570, CC BY-SA 3.0 (via Wikimedia Commons). Source: https://commons.wikimedia.org/wiki/File:Basketball-Basic_Types_of_Dribbling.webm. Changes: converted to MP4 for local evaluation."
+    },
+    {
+      "id": "dance-spin",
+      "title": "B-boy performing airchair spin in slow motion.webm",
+      "domain": "dance",
+      "source_page": "https://commons.wikimedia.org/wiki/File:B-boy_performing_airchair_spin_in_slow_motion.webm",
+      "license_verification": "license_recorded_from_public_file_page",
+      "source_sha256": null,
+      "prepared_sha256": null,
+      "annotations_state": "pending_independent_visual_inspection",
+      "author": "Grendelkhan",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/B-boy_performing_airchair_spin_in_slow_motion.webm",
+      "license_checked_at": "2026-11-01",
+      "attribution": "B-boy performing airchair spin in slow motion.webm by Grendelkhan, CC BY-SA 4.0 (via Wikimedia Commons). Source: https://commons.wikimedia.org/wiki/File:B-boy_performing_airchair_spin_in_slow_motion.webm. Changes: converted to MP4 for local evaluation."
+    },
+    {
+      "id": "cooking-peel",
+      "title": "Garlic peeler.webm",
+      "domain": "cooking",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Garlic_peeler.webm",
+      "license_verification": "license_recorded_from_public_file_page",
+      "source_sha256": null,
+      "prepared_sha256": null,
+      "annotations_state": "pending_independent_visual_inspection",
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Garlic_peeler.webm",
+      "license_checked_at": "2026-11-01",
+      "attribution": "Garlic peeler.webm - \u00a9 Raimond Spekking / CC BY-SA 4.0 (via Wikimedia Commons). Source: https://commons.wikimedia.org/wiki/File:Garlic_peeler.webm. Changes: converted to MP4 for local evaluation."
+    },
+    {
+      "id": "animal-fetch",
+      "title": "Dog Fetches Hero2 Stick From River.webm",
+      "domain": "animals",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dog_Fetches_Hero2_Stick_From_River.webm",
+      "license_verification": "license_recorded_from_public_file_page",
+      "source_sha256": null,
+      "prepared_sha256": null,
+      "annotations_state": "pending_independent_visual_inspection",
+      "author": "idioterna",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Dog_Fetches_Hero2_Stick_From_River.webm",
+      "license_checked_at": "2026-11-01",
+      "attribution": "Dog Fetches Hero2 Stick From River.webm by idioterna, CC BY 3.0 (via Wikimedia Commons). Source: https://commons.wikimedia.org/wiki/File:Dog_Fetches_Hero2_Stick_From_River.webm. Changes: converted to MP4 for local evaluation."
+    },
+    {
+      "id": "vehicle-train",
+      "title": "China Railway High-speed train passing through station.webm",
+      "domain": "vehicles",
+      "source_page": "https://commons.wikimedia.org/wiki/File:China_Railway_High-speed_train_passing_through_station.webm",
+      "author": "Anna Frodesiak",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "license_verification": "license_recorded_from_public_file_page",
+      "license_checked_at": "2026-11-01",
+      "source_sha256": null,
+      "prepared_sha256": null,
+      "annotations_state": "pending_independent_visual_inspection",
+      "attribution": "China Railway High-speed train passing through station.webm by Anna Frodesiak, CC BY-SA 3.0 (via Wikimedia Commons). Source: https://commons.wikimedia.org/wiki/File:China_Railway_High-speed_train_passing_through_station.webm. Changes: converted to MP4 for local evaluation.",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/China_Railway_High-speed_train_passing_through_station.webm"
+    }
+  ],
+  "source_metadata_attempt": {
+    "date": "2026-11-01",
+    "status": "HTTP 403 from public Wikimedia API; robot policy response; metadata not captured"
+  },
+  "replaced_candidates": [
+    {
+      "id": "vehicle-pass",
+      "title": "\u00dcberholen und Rots\u00fcnde.webm",
+      "domain": "vehicles",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%C3%9Cberholen_und_Rots%C3%BCnde.webm",
+      "license_verification": "pending_metadata_capture",
+      "source_sha256": null,
+      "prepared_sha256": null,
+      "annotations_state": "pending_independent_visual_inspection",
+      "replacement_reason": "Public file description and license could not be retrieved before scoring; replaced with an accessible vehicle source. No inference or scoring was performed on this candidate."
+    }
+  ],
+  "media_download_state": {
+    "id": "sports-skate",
+    "http_status": 429,
+    "retry_after": "10",
+    "state": "remote_host_rejected_download; no bypass or automatic retry"
+  }
+}

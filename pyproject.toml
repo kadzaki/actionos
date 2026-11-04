@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "videocut"
+version = "0.1.0"
+description = "Prompt-directed action footage editing with Meta cloud APIs"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi==0.115.0",
+  "pydantic==2.9.2",
+  "uvicorn==0.30.6",
+  "python-dotenv==1.0.1",
+  "httpx==0.26.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest==7.3.0", "httpx==0.26.0"]
+
+[tool.setuptools.packages.find]
+where = ["backend"]
+
+[tool.pytest.ini_options]
+pythonpath = ["backend"]
+testpaths = ["backend/tests"]
